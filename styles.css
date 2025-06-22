@@ -1,0 +1,274 @@
+:root {
+  --bg-color-light: #f5f2ec;
+  --text-color: #442a19;
+  --button-color: #6b5c4c;
+}
+
+body {
+  font-family: "Roboto Serif", serif;
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.link:visited {
+  color: var(--text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--button-color);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.shop-link-btn {
+  background-color: var(--button-color);
+
+  display: flex;
+  justify-content: center;
+  max-width: 110px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid var(--button-color);
+  color: var(--bg-color-light);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 12px;
+  font-family: inherit;
+  text-decoration: none;
+
+  transition: all 0.6s ease;
+}
+
+.shop-link-btn:hover {
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+}
+
+.wow-section {
+  text-align: center;
+}
+
+.wow-title {
+  font-weight: 300;
+}
+
+/* header */
+
+.header {
+  border-bottom: 1px solid var(--button-color);
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav-header {
+  display: flex;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-btn-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* hero */
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+}
+
+.hero-img-content {
+  max-width: 817px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+/* about */
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-section-title {
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+
+.about-btn {
+  margin-top: 48px;
+  background-color: var(--bg-color-light);
+  color: var(--text-color);
+  transition: all 0.6s ease;
+}
+
+.about-btn:hover {
+  background-color: var(--button-color);
+  color: var(--bg-color-light);
+}
+
+/* categories */
+
+.section-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoty-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-item {
+  transition: all 0.6s ease;
+  text-align: center;
+}
+
+.category-item:hover {
+  transform: scale(1.02) translateY(-3px);
+}
+
+.category-title {
+  font-size: 24px;
+
+  text-transform: uppercase;
+  color: var(--text-color);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* border: 0.1px solid var(--text-color); */
+}
+
+.category-title::after {
+  content: "→";
+  margin-left: 24px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.6s ease;
+}
+
+.category-item:hover .category-title::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* recommends */
+
+.recommend-list {
+  display: flex;
+  gap: 24px;
+}
+
+.recommend-item {
+  border: 1px solid var(--button-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+}
+
+.item-card-description {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-card-img {
+  width: 260px;
+  height: 260px;
+}
+
+.item-card-img > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.shop-link-btn.cart-button{
+  min-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
