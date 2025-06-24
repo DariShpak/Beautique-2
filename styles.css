@@ -332,3 +332,7 @@ img {
 
   align-items:center;
 }
+
+.item-buttons-wrap .cart-button{
+  margin: 0;
+}
