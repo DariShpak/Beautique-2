@@ -311,3 +311,24 @@ img {
   min-width: 150px;
   cursor: pointer;
 }
+/* item-page */
+
+.item-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-description{
+  max-width: 484px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item-buttons-wrap{
+  display: flex;
+  gap: 24px;
+
+  align-items:center;
+}
