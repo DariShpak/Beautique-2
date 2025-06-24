@@ -214,7 +214,6 @@ img {
   color: var(--text-color);
   padding-top: 8px;
   padding-bottom: 8px;
-  /* border: 0.1px solid var(--text-color); */
 }
 
 .category-title::after {
@@ -259,8 +258,6 @@ img {
   transform: scale(1.01) translateY(-1px);
 } */
 
-
-
 .item-card-description {
   margin-top: 24px;
   display: flex;
@@ -284,4 +281,19 @@ img {
   min-width: 260px;
   margin-left: auto;
   margin-right: auto;
+}
+/* footer */
+
+.footer-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav-list {
+  display: flex;
+  gap: 24px;
 }
