@@ -303,8 +303,11 @@ img {
 .filter-list {
   display: flex;
   gap: 16px;
+
+  justify-self: center;
 }
 
-.filter-btn{
+.filter-btn {
   min-width: 150px;
+  cursor: pointer;
 }
