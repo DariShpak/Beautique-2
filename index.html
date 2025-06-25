@@ -38,7 +38,11 @@
           </ul>
         </nav>
         <ul class="header-btn-list list">
-          <li class="header-btn-item">cart</li>
+          <li class="header-btn-item">
+            <button class="open-cart-btn">
+              cart <span class="cart-counter" style="display: none"></span>
+            </button>
+          </li>
           <li class="header-btn-item">lang</li>
         </ul>
       </div>
@@ -239,5 +243,34 @@
         </nav>
       </div>
     </footer>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+      <!-- Cart Header -->
+      <div class="cart-header">
+        <h2 class="cart-title">Your Cart</h2>
+        <button class="cart-close">×</button>
+      </div>
+
+      <!-- Cart Content -->
+      <div class="cart-content">
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items will be inserted here by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Cart Footer -->
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span class="subtotal-label">Subtotal</span>
+          <span class="subtotal-amount" id="subtotalAmount">€0.00</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" onclick="goToCheckout()">
+          Continue to Checkout
+        </button>
+      </div>
+    </div>
+    <script type="module" src="./js/cart.js"></script>
   </body>
 </html>
